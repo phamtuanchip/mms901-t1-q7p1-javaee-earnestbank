@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 5, 2011 5:23:43 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="Bankrental.Banktrans" table="banktrans" catalog="bankonlinesystem">
+        <id name="bankTransId" type="java.lang.Integer">
+            <column name="BankTransID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="bankaccount" class="Bankrental.Bankaccount" fetch="select">
+            <column name="AccType" length="100" />
+        </many-to-one>
+        <many-to-one name="customer" class="Bankrental.Customer" fetch="select">
+            <column name="CustomerID" />
+        </many-to-one>
+        <property name="bankAccNumber" type="int">
+            <column name="BankAccNumber" not-null="true" />
+        </property>
+        <property name="bankTransAmount" type="double">
+            <column name="BankTransAmount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="tranDate" type="date">
+            <column name="TranDate" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

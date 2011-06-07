@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 5, 2011 5:23:43 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="Bankrental.Loaninfo" table="loaninfo" catalog="bankonlinesystem">
+        <id name="loanInfoId" type="java.lang.Integer">
+            <column name="LoanInfoID" />
+            <generator class="identity" />
+        </id>
+        <property name="loanType" type="string">
+            <column name="LoanType" length="100" not-null="true" />
+        </property>
+        <property name="rateOfInterest" type="double">
+            <column name="RateOfInterest" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="minDownPayment" type="double">
+            <column name="MinDownPayment" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
