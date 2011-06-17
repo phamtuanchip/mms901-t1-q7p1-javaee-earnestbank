@@ -10,9 +10,9 @@
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.current_session_context_class">thread</property>
     <property name="hibernate.query.factory_class">org.hibernate.hql.classic.ClassicQueryTranslatorFactory</property>
-    <mapping resource="Bankrental/Customer.hbm.xml"/>
-    <mapping resource="Bankrental/Banktrans.hbm.xml"/>
-    <mapping resource="Bankrental/Loaninfo.hbm.xml"/>
-    <mapping resource="Bankrental/Bankaccount.hbm.xml"/>
+    <mapping resource="BankEntity/Customer.hbm.xml"/>
+    <mapping resource="BankEntity/Banktrans.hbm.xml"/>
+    <mapping resource="BankEntity/Loaninfo.hbm.xml"/>
+    <mapping resource="BankEntity/Bankaccount.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
