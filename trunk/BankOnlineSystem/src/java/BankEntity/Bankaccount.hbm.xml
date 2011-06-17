@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 5, 2011 5:23:43 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="bankonlinesystem" name="BankEntity.Bankaccount" table="bankaccount">
+    <id name="accType" type="string">
+      <column length="100" name="AccType"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="minBalAmount" type="double">
+      <column name="MinBalAmount" not-null="true" precision="22" scale="0"/>
+    </property>
+    <property name="rateOfInterest" type="double">
+      <column name="RateOfInterest" not-null="true" precision="22" scale="0"/>
+    </property>
+    <set inverse="true" name="banktranses">
+      <key>
+        <column length="100" name="AccType"/>
+      </key>
+      <one-to-many class="BankEntity.Banktrans"/>
+    </set>
+  </class>
+</hibernate-mapping>
