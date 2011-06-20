@@ -3,8 +3,6 @@
  * and open the template in the editor.
  */
 package BankController;
-
-import java.sql.*;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
