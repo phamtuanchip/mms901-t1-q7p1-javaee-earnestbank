@@ -12,6 +12,13 @@
     <required>false</required>
     <rtexprvalue>false</rtexprvalue>
     </attribute>
+    <attribute>
+    <name>role</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+    <deferred-value>true</deferred-value>
+    
+    </attribute>
   </tag>
   <tag>
     <name>insert</name>
@@ -36,6 +43,7 @@
         <name>content</name>
         <required>false</required>
         <rtexprvalue>false</rtexprvalue>
+        
     </attribute>
     <attribute>
         <name>direct</name>

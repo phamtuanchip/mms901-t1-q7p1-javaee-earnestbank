@@ -47,3 +47,31 @@ padding-bottom:15px;
 }
 .footer a{ color:#573201; text-decoration:none; }
 .footer a:hover{ color:#F8F979; text-decoration:none; }
+
+input:focus {
+background: #fdffc8;
+}
+ 
+label.error {
+    width: 180px;
+    border: 1px solid #b5b5b5;
+    padding: 2px 0px 0px 25px; margin: 4px 0px 0px 0px;
+    background: #fcf2c4 url(images/error.png) no-repeat 3px 50%;
+    display: inline-block;
+    
+ }
+ 
+span {
+    color: red;
+    font-weight: bold;
+ }
+ 
+ .warning {
+    color: red;
+    padding: 20px 0px 0px 20px;
+ }
+ 
+ .success {
+    color: green;
+    padding: 20px 0px 0px 20px;
+ }
