@@ -22,6 +22,7 @@
                 <td width="230" valign="top">
                     <template:get name="top_right_sidebar" />
                     <template:get name="right_sidebar" />
+                    <template:get name="login" />
                     <template:get name="bottom_right_sidebar" />
                 </td>   
             </tr>
